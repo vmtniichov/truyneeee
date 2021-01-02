@@ -11,7 +11,7 @@
     <title>MT' Page! But !Empty</title>
 </head>
 <body>
-    <div id="static" style="height: 100vh; background-image: url(img/background.jpg);">
+    <div id="static" style="height: 100vh; background-image: url(img/background.jpg); background-size: cover;">
       <div class="w-full text-gray-700 z-50 bg-white fixed dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
           <div class="p-4 flex flex-row items-center justify-between">
@@ -25,7 +25,7 @@
           </div>
           <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
             <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg md:mt-0 hover:text-teal-500 focus:text-gray-900" href="#">Home</a>
-            <a  @click.away="open = false"  class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-teal-500 focus:text-steal-500" href="#middle">About Me</a>
+            <a   @click="open = !open"  class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-teal-500 focus:text-steal-500" href="#middle">About Me</a>
             <div @click.away="open = false" class="relative z-50" x-data="{ open: false }">
               <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-teal-500">
                 <span>Courses</span>
@@ -92,11 +92,10 @@
                     <h2 class="text-2xl">Me in 5 years(Now 2020)</h2>
                     <p>In the next 2 years, I'll graduate and work as a Back-end Dev for a software company. Two years later from there I will spend to develop myself and try to become a Fullstack-Dev. And the last year I'll find a chance to get a higher salary with higher promotion opportunities.</p>
                     <h2 class="text-2xl">Contact</h2>
-                    <p class="leading-6">Here's my Facebook: <a href="fb.com/vmtniichov">Vũ Minh Trí</a>. Just send me a friend request and text to me, I'll accept it.</p>
-                    
+                    <p class="leading-6 mb-16">Here's my Facebook: <a href="fb.com/vmtniichov">Vũ Minh Trí</a>. Just send me a friend request and text to me, I'll accept it.</p>
             </div>
         </main>
     </div>
-    <div class="sticky w-full text-center font-semibold text-gray-900 bottom-0 p-4 bg-gray-200">VMT &copy; 2020</div>
+    <div class="fixed w-full text-center font-semibold text-gray-900 bottom-0 p-4 bg-gray-200">VMT &copy; 2020</div>
 </body>
 </html>
