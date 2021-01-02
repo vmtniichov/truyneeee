@@ -8,7 +8,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="img/logo_size.png" type="image/png">
-    <title>MT's Page! But !Empty</title>
+    <title>MT's Page! But not Empty</title>
 </head>
 <body>
     <div id="static" style="height: 100vh;">
@@ -33,10 +33,10 @@
               </button>
               <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                 <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_java.html">Java</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_python.html">Python</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="networking.html">Networking</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_python.html">Others</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_java.html">Java</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_python.html">Python</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="networking.html">Networking</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="others.html">Others</a>
                 </div>
               </div>
             </div>   
@@ -47,9 +47,9 @@
               </button>
               <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                 <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="Ebooks.html#java">Java</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="Ebooks.html#python">Python</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="Ebooks.html#others">Orthers</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="Ebooks.html#java">Java</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="Ebooks.html#python">Python</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="Ebooks.html#others">Others</a>
                 </div>
               </div>
             </div>  
@@ -57,25 +57,22 @@
         </div>
       </div>
 
-              <div class="grid grid-cols-12 text-gray-200" id="">
-                <h1 class="col-span-12 text-center text-5xl text-gray-100 mt-32">Hiiii glad to see you here!</h1>
-                <h2 class="col-span-12 text-center text-3xl m-8 ">Here's some of my Java collection. Hope it could help you!</h2>
+                <div class="text-gray-100" style="height: 100vh;">
+                    <main class="grid grid-cols-12" id="java">
+                        <!-- java -->
+                        <h1 class="col-span-12 text-center text-5xl text-gray-100 mt-32">Java E-books</h1>
+                        <div class="grid grid-cols-12 col-span-12">
+                            <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl mt-16">A Java Library of Graph Algorithms and Optimization</label>
+                            <a href="https://drive.google.com/file/d/1TlDUF-I4LUjiXcMWKmLB_kQbh1UwIOGs/view?usp=sharing" target="_blank" class="col-start-10 col-span-2 text-center hover:text-teal-500  mt-16">Click here to download.</a>
+                            <!-- Python -->
+                            <h1 class="col-span-12 text-center text-5xl text-gray-100 mt-32">Python E-Books</h1>
+                            <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl mt-16">Python for Dummies</label>
+                            <a href="https://drive.google.com/file/d/1c_yDMkNbNJTKBAPRYyYUWDbMHDAX8VyG/view?usp=sharing" target="_blank" class="col-start-10 col-span-2 text-center hover:text-teal-500  mt-16">Click here to download.</a>
+                        </div>
+                    </main>
+                    <h2 class="col-span-12 text-5xl text-center">Updating...</h2>
 
-                <div class="grid grid-cols-12 col-span-8 col-start-2">
-                  <h2 class="col-span-12 xl:col-start-2 text-3xl xl:m-8 mt-6 ">Basic Java</h2>
-                  <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl">A basic course to get started with the Java programming language.</label>
-                  <a href="https://drive.google.com/file/d/1hlU4JV3MNGGODZRu6ELQSLLjMRSMxr8e/view?usp=sharing" target="_blank" class="col-start-11 col-span-2 text-center hover:text-teal-500 ">Click here to download.</a>
-                  
-                  <h2 class="col-span-12 xl:col-start-2 text-3xl xl:m-8 mt-6 ">Advanced Java</h2>
-                  <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl">An advanced course Java includes many exercises for you to increase your coding skills.</label>
-                  <a href="https://drive.google.com/file/d/1AOHLUcV_2_lFoZDBn4oZ3ytLjcxsaY4F/view?usp=sharing" target="_blank" class="col-start-11 col-span-2 text-center hover:text-teal-500 ">Click here to download.</a>
-
-                  <h2 class="col-span-12 xl:col-start-2 text-3xl xl:m-8 mt-6 ">FPT Java Curriculum</h2>
-                  <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl">This course includes every thing you've to knows about Java form operator to OOP,..</label>
-                  <a href="https://drive.google.com/file/d/1gZddh3e-lS_8KWcOB3JCuasMgTIXseQJ/view?usp=sharing" target="_blank" class="col-start-11 col-span-2 text-center hover:text-teal-500 ">Click here to download.</a>
                 </div>
-                <h2 class="col-span-12 text-5xl text-center">Updating...</h2>
-              </div>
           </div>
           </nav>
         </div>
@@ -83,8 +80,6 @@
       
 </div>
 </div>
-
-
 <div class="fixed w-full text-center font-semibold text-gray-900 bottom-0 p-4 bg-gray-200">VMT &copy; 2020</div>
 </body>
 </html>

@@ -8,10 +8,10 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="img/logo_size.png" type="image/png">
-    <title>MT's Page! But !Empty</title>
+    <title>MT's Page! But not Empty</title>
 </head>
 <body>
-    <div id="static" style="height: 100vh; background-image: url(img/background.jpg); background-size: cover;">
+    <div id="static" style="height: 100vh;">
       <div class="w-full text-gray-700 z-50 bg-white fixed dark-mode:text-gray-200 dark-mode:bg-gray-800">
         <div x-data="{ open: false }" class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
           <div class="p-4 flex flex-row items-center justify-between">
@@ -24,8 +24,8 @@
             </button>
           </div>
           <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-            <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg md:mt-0 hover:text-teal-500 focus:text-gray-900" href="#">Home</a>
-            <a   @click="open = !open"  class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-teal-500 focus:text-steal-500" href="#middle">About Me</a>
+            <a class="px-4 py-2 mt-2 text-sm font-semibold text-gray-900 rounded-lg md:mt-0 hover:text-teal-500 focus:text-gray-900" href="index.html">Home</a>
+            <a  @click.away="open = false"  class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 hover:text-teal-500 focus:text-steal-500" href="index.html#middle">About Me</a>
             <div @click.away="open = false" class="relative z-50" x-data="{ open: false }">
               <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-teal-500">
                 <span>Courses</span>
@@ -33,10 +33,10 @@
               </button>
               <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                 <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_java.html">Java</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_python.html">Python</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="networking.html">Networking</a>
-                  <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="others.html">Others</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_java.html">Java</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="course_python.html">Python</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="networking.html">Networking</a>
+                    <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 hover:text-teal-500" href="others.html">Others</a>
                 </div>
               </div>
             </div>   
@@ -57,45 +57,28 @@
         </div>
       </div>
 
+              <div class="grid grid-cols-12 text-gray-200" id="">
+                <h1 class="col-span-12 text-center text-5xl text-gray-100 mt-32">Hiii what are you looking for?</h1>
+                <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl mt-16">Embedded System</label>
+                <a href="https://drive.google.com/file/d/1I-JAKuWpnqWMVuM3fdwgbG-0cHPtEOic/view?usp=sharing" target="_blank" class="col-start-10 col-span-2 text-center hover:text-teal-500  mt-16">Click here to download.</a>
+                
+                <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl mt-16">Cryptography and information security</label>
+                <a href="https://drive.google.com/file/d/1MJ0z5xZMHo6jeXFuc27pylv8SI2XtYC9/view?usp=sharing" target="_blank" class="col-start-10 col-span-2 text-center hover:text-teal-500  mt-16">Click here to download.</a>
 
-              <section class="relative grid grid-cols-6 transform 2xl:translate-y-64 xl:translate-y-64 lg:translate-y-64 md:translate-y-32 sm:translate-y-16 translate-y-32 text-gray-100 text-2xl ">
-                <h1 class="text-center col-span-6  xl:inset-14 text-3xl text-bold 2xl:text-5xl xl:text-5xl lg:text-3xl md:text-3xl sm:text-3xl opacity-10">Hi I'm MT. Welcome to my page!</h1>
-                <h2 class="text-center text-lg col-start-2 col-span-4 xl:text-3xl md:text-2xl  sm:text-2xl">I'm just a guy who collects everything which interested me and shares them with people. I've created this page to do that, to share everything I found with you guys. Maybe it can help you.</h2>
-                <h2 class="text-center text-lg col-start-2 col-span-4 xl:text-3xl md:text-2xl  sm:text-2xl">Click the More button above to see my collection</h2>
-                <h2 class="text-center text-lg col-start-2 col-span-4 xl:text-3xl md:text-2xl  sm:text-2xl">Let's find out who I am!</h2>
-            </section>
+                <label class="xl:col-span-6 xl:col-start-2 col-span-8 text-xl mt-16">DATA STRUCTURES and ALGORITHMS USING C#</label>
+                <a href="https://drive.google.com/file/d/1HO8As9bKbhYvEGHg16UFcQ9YRYBzBEZg/view?usp=sharing" target="_blank" class="col-start-10 col-span-2 text-center hover:text-teal-500  mt-16">Click here to download.</a>
+                <h2 class="col-span-12 text-5xl text-center bottom-0">Updating...</h2>
+
+              </div>
           </div>
           </nav>
-          
         </div>
       </div>
-
+      
 </div>
 </div>
-  
 
-    <div class="text-gray-100" style="height: 100vh;">
-        <main class="grid grid-cols-12" id="middle">
-            <h1 class="col-span-12 text-center text-5xl text-gray-100 mt-32">About Me</h1>
-            <h2 class="col-span-12 text-center text-3xl m-8 ">"Youth is like trial and error method. So try it till you succeed, don't be scared!" - Me</h2>
-                <div class="col-span-6 col-start-4 flex justify-end xl:col-span-6">
-                    <img src="img/self.jpg" width="500px" alt="">
-                </div>
-                <div class="col-span-12 m-6 relative transform translate-y-2 xl:col-span-6">
-                    <h2 class="text-2xl">Introduce myself</h2>
-                    <p  class=" leading-6">Hi guys, it's me again. Glad to meet you.
-                    My full name is Vu Minh Tri. You can call me Truy or MT if you want xD.
-                    
-                    Guess what! I'm just 20. I'm a K18 IT-er, Lac Hong University. And I still FA :(</p>
-                    <h2 class="text-2xl ">Hobbies</h2>
-                    <p class=" leading-6">I love coding, reading and listen to music. Especially rap and sad songs. I also a big fan of Mr. Siro. Do you know him? People said: "If you've just  broken up with your girlfriend, DO NOT listen to his music." <br> If you don't believe it, try it yourself. But do not blame me for not warning.</p>
-                    <h2 class="text-2xl">Me in 5 years(Now 2020)</h2>
-                    <p>In the next 2 years, I'll graduate and work as a Back-end Dev for a software company. Two years later from there I will spend to develop myself and try to become a Fullstack-Dev. And the last year I'll find a chance to get a higher salary with higher promotion opportunities.</p>
-                    <h2 class="text-2xl">Contact</h2>
-                    <p class="leading-6 mb-16">Here's my Facebook: <a href="https://fb.com/vmtniichov" target="_blank">Vũ Minh Trí</a>. Just send me a friend request and text to me, I'll accept it.</p>
-            </div>
-        </main>
-    </div>
-    <div class="fixed w-full text-center font-semibold text-gray-900 bottom-0 p-4 bg-gray-200">VMT &copy; 2020</div>
+
+<div class="fixed w-full text-center font-semibold text-gray-900 bottom-0 p-4 bg-gray-200">VMT &copy; 2020</div>
 </body>
 </html>
